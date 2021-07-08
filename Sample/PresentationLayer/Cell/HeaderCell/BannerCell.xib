@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="BannerCell" reuseIdentifier="BannerCell" id="gTV-IL-0wX" customClass="BannerCell" customModule="Sample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="223"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="290" height="223"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="08i-LC-Gqp">
+                        <rect key="frame" x="0.0" y="0.0" width="290" height="223"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uaC-5p-J4v">
+                                <rect key="frame" x="0.0" y="0.0" width="290" height="223"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uaC-5p-J4v" secondAttribute="bottom" id="2bW-E7-A3X"/>
+                            <constraint firstItem="uaC-5p-J4v" firstAttribute="top" secondItem="08i-LC-Gqp" secondAttribute="top" id="IE1-uA-cIn"/>
+                            <constraint firstAttribute="trailing" secondItem="uaC-5p-J4v" secondAttribute="trailing" id="Iml-bA-O2O"/>
+                            <constraint firstItem="uaC-5p-J4v" firstAttribute="leading" secondItem="08i-LC-Gqp" secondAttribute="leading" id="vBp-oN-8Rj"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="08i-LC-Gqp" secondAttribute="trailing" id="AWF-kI-o5l"/>
+                <constraint firstItem="08i-LC-Gqp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LkL-ss-KZv"/>
+                <constraint firstAttribute="bottom" secondItem="08i-LC-Gqp" secondAttribute="bottom" id="Uwz-xe-AK4"/>
+                <constraint firstItem="08i-LC-Gqp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zBN-Hu-CLW"/>
+            </constraints>
+            <size key="customSize" width="290" height="223"/>
+            <connections>
+                <outlet property="bannerImg" destination="uaC-5p-J4v" id="Vxw-5A-ONK"/>
+                <outlet property="bgView" destination="08i-LC-Gqp" id="LHc-uA-u9k"/>
+            </connections>
+            <point key="canvasLocation" x="252.80000000000001" y="173.16341829085459"/>
+        </collectionViewCell>
+    </objects>
+</document>
